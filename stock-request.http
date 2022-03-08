@@ -1,0 +1,18 @@
+GET http://localhost:8081/api/stocks
+Accept: application/json
+
+#[
+#  {
+#    "symbol": "AZSU",
+#    "name": "华硕"
+#  },
+#  {
+#    "symbol": "DELL",
+#    "name": "戴尔"
+#  }
+#]
+
+###
+GET http://localhost:8081/api/stock/HP
+Accept: application/json
+
