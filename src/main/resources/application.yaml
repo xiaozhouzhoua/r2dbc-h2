@@ -3,3 +3,13 @@ spring:
     url: r2dbc:h2:mem:///test
     username: admin
     password: admin
+
+  rsocket:
+    server:
+      mapping-path: /rsocket
+      # tcp连接使用port属性
+      # port: 8081
+      transport: websocket
+
+server:
+  port: 8080
