@@ -24,21 +24,21 @@ public class R2dbcH2Application {
                 .run(args);
     }
 
-    @Bean
+    //@Bean
     public CommandLineRunner demo1(StockSubscriptionDao stockSubscriptionDao) {
         return ((args) -> {
             stockSubscriptionDao.findAll().subscribe(System.out::println);
         });
     }
 
-    @Bean
+    //@Bean
     public CommandLineRunner demo2(UserDao userDao) {
         return ((args) -> {
             userDao.findAll().subscribe(System.out::println);
         });
     }
 
-    @Bean
+    //@Bean
     public CommandLineRunner demo3(StockDao stockDao) {
         return ((args) -> {
             stockDao.findAll().subscribe(System.out::println);
